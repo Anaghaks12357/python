@@ -1,0 +1,10 @@
+
+def add(*args):
+ """Function to add variable length arguments."""
+ total=0
+ for n in args:
+  total=total+n
+ return total
+numbers=input("enter integers seperated by spaces:").split()
+numbers=list(map(int,numbers))
+print("Sum=",add(*numbers))
